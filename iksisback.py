@@ -2,7 +2,6 @@ import tkinter
 import os
 from tkinter import filedialog
 from tkinter import Button
-from tkinter import *
 from PIL import ImageTk
 #익이전용 UI 프로젝트 건드리지마시오
 main = tkinter.Tk()
