@@ -1,6 +1,7 @@
 
 from tkinter import filedialog
 from tkinter import Button
+from tkinter import Label
 from tkinter import *
 
 main = Tk()
@@ -16,10 +17,14 @@ main.resizable(False,False)
 def add_file():
         files = filedialog.askopenfilenames(title="이미지 파일을 선택하세요",\
         filetypes=(("PNG 파일","*.png"),("모든 파일", "*.*")))
-        print(files)
+        add_path = Label(main,text=files)
+        add_path.pack()
+
        
 add_file_btn = Button(main,text="사진찾기",command=add_file)
 add_file_btn.pack()
+add_path = Label(main,text="유후")
+add_path.pack()
 
 
 
